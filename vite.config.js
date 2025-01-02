@@ -5,7 +5,7 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react()],
-    base: './',
+    base: 'https://minhalalikhan.github.io/portfolio/',
     build: {
         outDir: 'docs', // This is the default, you can adjust it if needed
     },
