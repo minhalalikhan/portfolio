@@ -63,7 +63,7 @@ function ProjectCard({ repo }) {
         <div className='projectCard'>
             <div className='repoImage'>
                 {/* img */}
-                <img src={'/Projects/' + repo.img} />
+                <img src={'./Projects/' + repo.img} />
             </div>
             <div className='repo_details'>
                 <div className='details'>
@@ -100,7 +100,7 @@ function Tag({ name }) {
 
 
     return <div className='Tag'>
-        <img src={'/logos/' + name + '.png'} />
+        <img src={'./logos/' + name + '.png'} />
         <p>{name}</p>
     </div>
 }

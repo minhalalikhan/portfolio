@@ -15,11 +15,11 @@ function ContactCard({ contact = '', img = '', color = 'lightgray', url, ...prop
             <div className='contactcard' onClick={gotoURL} {...props}>
 
                 <div className="skill_fg" style={{ boxShadow: `4px 5px 10px 0px ${color}` }}>
-                    <img src={'/logos/' + img + '.png'} />
+                    <img src={'./logos/' + img + '.png'} />
                     <div className='glass'
                     //  style={{ backgroundColor: `${color}` }}
                     >
-                        <img src={'/logos/' + img + '.png'} />
+                        <img src={'./logos/' + img + '.png'} />
                     </div>
                 </div>
 

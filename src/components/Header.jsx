@@ -13,7 +13,7 @@ function Header() {
                 </p>
             </div>
             <div className="HeaderImage">
-                <img src='/favicon.jpg' />
+                <img src='./favicon.jpg' />
             </div>
         </section>
     )
