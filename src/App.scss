@@ -1,0 +1,299 @@
+$mobile-width: 450px;
+.navbar {
+    display: flex;
+    width: 100%;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    .CTA {
+        display: flex;
+        gap: 20px;
+        flex-wrap: nowrap;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    @media screen and (max-width:$mobile-width) {
+        .CTA {
+            display: none;
+        }
+    }
+}
+
+section {
+    min-height: fit-content;
+    padding: 40px;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    @media(max-width: 750px) {
+        font-size: 24px;
+    }
+}
+
+.header {
+    height: calc(100% - 52px) !important;
+    width: 100%;
+    display: flex;
+    .HeaderText {
+        flex: 1;
+        align-self: center;
+    }
+    .HeaderImage {
+        flex: 1;
+        align-self: center;
+        text-align: center;
+        img {
+            border-radius: 50%;
+            max-width: 100%;
+            width: 400px;
+            box-shadow: 6px 6px 11px 1px #7c695c;
+        }
+    }
+    @media (max-width:750px) {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
+
+.about {
+    .aboutme {
+        padding-top: 30px;
+        max-width: 900px;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 24px;
+    }
+}
+
+.skillshowcase {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.skillcard {
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    cursor: pointer;
+    position: relative;
+    .skill_fg {
+        border-radius: 20px;
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        img {
+            width: 80%;
+            object-fit: contain;
+        }
+        .glass {
+            display: none;
+            // width: 50%;
+            // height: 50%;
+            // position: absolute;
+            // top: 25%;
+            // filter: blur(20px);
+            // z-index: -2;
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            filter: blur(20px);
+            z-index: -2;
+        }
+    }
+    @media(max-width:750px) {
+        height: 50px;
+        width: 50px;
+        .skill_fg {
+            border-radius: 14px;
+        }
+    }
+}
+
+.projectsgrid {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.projectCard {
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    gap: 20px;
+    max-width: 90%;
+    width: 800px;
+    box-shadow: 8px 5px 1px black;
+    flex-wrap: wrap;
+    .repoImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 200px;
+        img {
+            object-fit: contain;
+            max-width: 100%;
+        }
+    }
+    .repo_details {
+        display: flex;
+        flex: 1;
+        gap: 10px;
+        flex-direction: column;
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+            .repo_title {
+                font-weight: 700;
+                font-size: x-large;
+            }
+            .repo_desc {
+                color: #5d5d5d;
+            }
+            .repo_tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+        .repo_CTA {
+            display: flex;
+            a {
+                text-decoration: none;
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 10px 20px;
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .projectCard {
+        flex-direction: column;
+    }
+}
+
+.contactgrid {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.contactcard {
+    width: 100px;
+    max-width: 100px;
+    cursor: pointer;
+    height: 100px;
+    max-height: 100px;
+    position: relative;
+    .skill_fg {
+        border-radius: 20px;
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        img {
+            width: 80%;
+            object-fit: contain;
+        }
+        .glass {
+            display: none;
+            // width: 50%;
+            // height: 50%;
+            // position: absolute;
+            // top: 25%;
+            // filter: blur(20px);
+            // z-index: -2;
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            filter: blur(20px);
+            z-index: -2;
+        }
+    }
+    @media(max-width:750px) {
+        height: 50px;
+        width: 50px;
+        .skill_fg {
+            border-radius: 14px;
+        }
+    }
+}
+
+// :not(.contactcard:hover) {
+//     .skill_fg {
+//         box-shadow: none !important;
+//     }
+// }
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    p {
+        text-align: center;
+    }
+}
+
+.snackbar {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    min-width: 200px;
+    min-height: 30px;
+    padding: 0 5px;
+}
+
+.noprojects {
+    font-size: 25px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.Tag {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    img {
+        object-fit: contain;
+        max-width: 20px;
+    }
+    p {}
+}
