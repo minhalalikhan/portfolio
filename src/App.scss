@@ -2,6 +2,11 @@ $mobile-width: 450px;
 .navbar {
     display: flex;
     width: 100%;
+    background-color: #ffffff8c;
+    backdrop-filter: blur(4px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
     padding: 15px 20px;
     align-items: center;
     justify-content: space-between;

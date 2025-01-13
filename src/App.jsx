@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import Spline from '@splinetool/react-spline';
 
 import './App.scss'
 
-import { Route, Routes } from 'react-router'
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Header from './components/Header'
