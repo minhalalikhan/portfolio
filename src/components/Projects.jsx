@@ -1,34 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard'
 
-import { Repos } from '../ProjectsData';
+import Repos from '../data/data.json';
 
 
 
 function Projects() {
-
-    // const [Repos, setRepos] = useState([
-    // ])
-    async function getRepos() {
-
-        try {
-
-            const response = await fetch(`https://api.github.com/users/minhalalikhan/repos`);
-
-
-            if (response.ok) {
-                const data = await response.json()
-                setRepos(data)
-            }
-        } catch (e) {
-            console.log('err occured ')
-        }
-    }
-
-    useEffect(() => {
-        // getRepos()
-    }, [])
-
 
 
     return (
